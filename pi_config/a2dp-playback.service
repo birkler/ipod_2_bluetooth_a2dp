@@ -1,0 +1,23 @@
+[Unit]
+Description=A2DP Playback
+After=bluealsa.service syslog.service
+Requires=bluealsa.service
+StartLimitInterval=200
+StartLimitBurst=5
+
+[Service]
+ExecStartPre=/bin/sleep 3
+ExecStart=/usr/bin/bluealsa-aplay --profile-a2dp 00:00:00:00:00:00
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=A2DP-Playback
+User=pi
+Restart=always
+RestartSec=10
+
+
+[Install]
+WantedBy=multi-user.target
+
+
+
