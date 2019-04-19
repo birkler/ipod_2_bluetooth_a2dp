@@ -56,19 +56,28 @@ dtparam=i2c_arm=on
 dtparam=audio=on
 
 
+#Enable pwm audio output on GPIO12 and GPIO13, still output on jack if running on RPI3+
 dtoverlay=audremap
 dtparam=enable_jack
 
 
-dtoverlay=hd44780-lcd
-dtparam=display_height=2
-dtparam=display_width=20
-dtparam=pin_bl=21
-dtparam=pin_d7=4
-dtparam=pin_d6=18
-dtparam=pin_d5=17
-dtparam=pin_d4=27
-dtparam=pin_rs=23
-dtparam=pin_en=22
+#dtoverlay=hd44780-lcd
+#dtparam=display_height=2
+#dtparam=display_width=20
+#dtparam=pin_bl=21
+#dtparam=pin_d7=4
+#dtparam=pin_d6=18
+#dtparam=pin_d5=17
+#dtparam=pin_d4=27
+#dtparam=pin_rs=23
+#dtparam=pin_en=22
 
 gpu_mem=64
+
+#enable overlay for usb-ethernet gadget
+dtoverlay=dwc2
+
+
+#Disable wifi to stop it interferring with bluettoth a2dp
+dtoverlay=pi3-disable-wifi
+
