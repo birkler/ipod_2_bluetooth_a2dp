@@ -38,6 +38,36 @@ def send_mode4_response(list):
 
     print(data.hex())
 
+def send_mode4_response_string(command, strdata):
+    time.sleep(0.005)
+    parameters = bytearray();
+    parameters.extend(serial.to_bytes(strdata))
+    parameters.append(0x00)
+    header = bytearray(6)
+    header[0] = 0xFF
+    header[1] = 0x55
+    header[2] = 1 + len(parameters)
+    header[3] = 0x04
+    header[4] = command >> 8
+    header[5] = command & 0xFF
+
+    checksum = header[2] + header[3] + header[4] + header[5] 
+    for d in command_parameters:
+        checksum += d
+
+    checksum &= 0xFF
+    checksum = 0x100 - checksum
+    checksum &= 0xFF
+
+    data = bytearray()
+    data.extend(header)
+    data.extend(command_parameters)
+    data.append(checksum)
+
+    ser.write(serial.to_bytes(data))
+
+    print(data.hex())
+
 
 
 
