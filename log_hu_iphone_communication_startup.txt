@@ -1,0 +1,31 @@
+
+
+hu:airmode = [0xFF,0x55,0x03,0x00,0x01,0x04,0xF8]
+//switch to air mode
+
+hu:FF5503040012e7
+//get ipod type size
+
+
+IP:FF5505040013010ed5
+//ipod type 010e
+
+hu:ff550404002601d1
+//start polling mode
+
+ip:ff5506040001 00 0026cf
+//reposne ok to command 0026
+
+
+hu:ff5503040016e3
+//switch to main library playlist (0)
+
+
+ip:ff5506040001000016df
+//reposne ok to command 0016
+
+
+hu:ff550404001805db
+
+
+

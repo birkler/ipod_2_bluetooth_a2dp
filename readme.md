@@ -35,3 +35,6 @@ https://github.com/oandrew/ipod-gadget
 
 http://pinouts.ru/PortableDevices/ipod_pinout.shtml
 https://nuxx.net/wiki/iPod_Dock_Connector
+
+
+https://www.raspberrypi.org/forums/viewtopic.php?f=63&t=163182
