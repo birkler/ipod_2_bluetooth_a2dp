@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-04-29T23:12:53Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.3.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.57,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "raspberry_aux_board_recover"
+        },
+        "Owner": "J Birkler <jorgen.birkler@gmail.com>",
+        "Size": {
+            "X": 30.15,
+            "Y": 71.11
+        }
+    }
+}
