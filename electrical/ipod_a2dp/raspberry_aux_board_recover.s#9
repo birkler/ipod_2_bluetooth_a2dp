@@ -17948,14 +17948,14 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="digital_signal" width="0.8128" drill="0">
+<class number="0" name="digital_signal" width="0.6096" drill="0">
 <clearance class="0" value="0.3048"/>
 </class>
-<class number="1" name="analog_signal" width="0.8128" drill="0">
+<class number="1" name="analog_signal" width="0.6096" drill="0">
 <clearance class="0" value="0.205"/>
 <clearance class="1" value="0.3048"/>
 </class>
-<class number="2" name="power" width="1.2192" drill="0">
+<class number="2" name="power" width="0.8128" drill="0">
 <clearance class="0" value="0.205"/>
 <clearance class="1" value="0.205"/>
 <clearance class="2" value="0.3048"/>

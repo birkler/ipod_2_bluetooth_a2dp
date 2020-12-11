@@ -2158,10 +2158,10 @@ design rules under a new name.</description>
 <contactref element="IC1" pad="2"/>
 <contactref element="IC1" pad="6"/>
 <polygon width="0.1524" layer="16" orphans="yes">
-<vertex x="40.64" y="-2.54"/>
-<vertex x="45.72" y="-2.54"/>
+<vertex x="15.24" y="67.31"/>
+<vertex x="45.72" y="67.31"/>
 <vertex x="45.72" y="-3.81"/>
-<vertex x="40.64" y="-3.81"/>
+<vertex x="15.24" y="-3.81"/>
 </polygon>
 <contactref element="IC2" pad="2"/>
 <contactref element="X1" pad="2"/>
@@ -2172,10 +2172,10 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="9"/>
 <contactref element="U$1" pad="39"/>
 <polygon width="0.8128" layer="1" orphans="yes">
-<vertex x="41.91" y="-2.54"/>
-<vertex x="45.72" y="-2.54"/>
+<vertex x="15.24" y="67.31"/>
+<vertex x="45.72" y="67.31"/>
 <vertex x="45.72" y="-3.81"/>
-<vertex x="41.91" y="-3.81"/>
+<vertex x="15.24" y="-3.81"/>
 </polygon>
 <contactref element="C8" pad="1"/>
 <contactref element="C7" pad="1"/>

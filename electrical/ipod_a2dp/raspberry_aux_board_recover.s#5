@@ -18570,6 +18570,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="X_AUD_R" gate="1" pin="P"/>
 <wire x1="12.7" y1="-33.02" x2="12.7" y2="-48.26" width="0.1524" layer="91"/>
+<label x="12.7" y="-48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="IP_RX" class="0">
@@ -18651,12 +18652,6 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <wire x1="96.52" y1="45.72" x2="99.06" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<wire x1="137.16" y1="66.04" x2="137.16" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="63.5" x2="142.24" y2="63.5" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="TV_OUT" class="0">
 <segment>
 <wire x1="124.46" y1="63.5" x2="119.38" y2="63.5" width="0.1524" layer="91"/>
@@ -18667,6 +18662,7 @@ http://www.fairchildsemi.com/ds/LM/LM7805.pdf</description>
 <segment>
 <pinref part="X_TV_OUT" gate="1" pin="P"/>
 <wire x1="-5.08" y1="-33.02" x2="-5.08" y2="-48.26" width="0.1524" layer="91"/>
+<label x="-5.08" y="-48.26" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 </nets>

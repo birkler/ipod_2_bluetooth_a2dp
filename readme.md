@@ -1,9 +1,12 @@
+# Setup bluetooth a2dp sink
+
+https://gist.github.com/mill1000/74c7473ee3b4a5b13f6325e9994ff84c
 https://gist.github.com/mill1000/74c7473ee3b4a5b13f6325e9994ff84c
 
 sudo unzip -p 2019-04-08-raspbian-stretch-lite.zip | sudo dd of=/dev/sda bs=4M conv=fsync status=progress
 
 
-# setup and connect to zero withotu wifi:
+# Setup and connect to zero without wifi:
 
 https://raspberrypi.stackexchange.com/questions/73523/connect-pi-zero-via-usb-rndis-gadget-to-ubuntu-17-04
 

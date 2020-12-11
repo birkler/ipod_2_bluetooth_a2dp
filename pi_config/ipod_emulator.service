@@ -1,0 +1,13 @@
+[Unit]
+Description=iPOD Emulator
+After=bluetooth.service
+Wants=bluetooth.service
+
+[Service]
+ExecStart=/usr/bin/python3 -u /usr/local/bin/ipod_emul_daemon.py
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=iPOD-emulator
+
+[Install]
+WantedBy=multi-user.target
