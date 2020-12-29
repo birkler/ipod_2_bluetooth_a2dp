@@ -6,12 +6,14 @@ StartLimitInterval=200
 StartLimitBurst=5
 
 [Service]
+Restart=always
+RestartSec=3
 ExecStartPre=/bin/sleep 3
 ExecStart=/usr/bin/bluealsa-aplay --profile-a2dp 00:00:00:00:00:00
 StandardOutput=syslog
 StandardError=syslog
 SyslogIdentifier=A2DP-Playback
-User=pi
+User=root
 Restart=always
 RestartSec=10
 
