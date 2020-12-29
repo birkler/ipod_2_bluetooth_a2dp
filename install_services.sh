@@ -100,7 +100,7 @@ sudo systemctl enable a2dp-playback.service
 sudo cp ./software/ipod_emulator_service/ipod_emul_daemon.py /usr/local/bin
 sudo chmod +x /usr/local/bin/ipod_emul_daemon.py
 
-sudo mv ./pi_config/ipod_emulator.service /etc/systemd/system
+sudo cp ./pi_config/ipod_emulator.service /etc/systemd/system
 sudo systemctl enable ipod_emulator.service
 
 
