@@ -7,7 +7,7 @@
 echo "Updating System"
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo rpi-update
+## sudo rpi-update
 
 ## Set Name and etc
 printf "\n"
@@ -88,22 +88,19 @@ echo -e 'power on \ndiscoverable on \nquit' | sudo bluetoothctl
 ## Create Services
 printf "\n"
 echo "Creating Services"
-sudo cp a2dp-agent /usr/local/bin
+sudo cp pi_config/a2dp-agent /usr/local/bin
 sudo chmod +x /usr/local/bin/a2dp-agent
 
-sudo cp bt-agent-a2dp.service /etc/systemd/system
+sudo cp ./pi_config/bt-agent-a2dp.service /etc/systemd/system
 sudo systemctl enable bt-agent-a2dp.service
 
-sudo cp a2dp-playback.service /etc/systemd/system
-sudo systemctl enable a2dp-playback.service
-
-sudo mv a2dp-playback.service /etc/systemd/system
+sudo cp ./pi_config/a2dp-playback.service /etc/systemd/system
 sudo systemctl enable a2dp-playback.service
 
 sudo cp ./software/ipod_emulator_service/ipod_emul_daemon.py /usr/local/bin
 sudo chmod +x /usr/local/bin/ipod_emul_daemon.py
 
-sudo mv ipod_emulator.service /etc/systemd/system
+sudo mv ./pi_config/ipod_emulator.service /etc/systemd/system
 sudo systemctl enable ipod_emulator.service
 
 
