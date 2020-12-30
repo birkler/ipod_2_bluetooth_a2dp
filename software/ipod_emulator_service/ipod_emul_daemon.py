@@ -3,7 +3,7 @@ import time
 
 ser = serial.Serial() # open serial port
 
-ser.port = '/dev/ttyUSB0'
+ser.port = '/dev/ttyS0'
 
 ser.baudrate = 19200
 ser.bytesize = serial.EIGHTBITS
